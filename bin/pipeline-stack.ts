@@ -28,7 +28,7 @@ export class BlueGreenPipelineStack extends Stack {
 
         const taskSetTerminationTimeInMinutes = new CfnParameter(this, 'taskSetTerminationTimeInMinutes', {
             type: 'Number',
-            default: '10',
+            default: '0',
             description: 'TaskSet termination time in minutes',
         });
 
