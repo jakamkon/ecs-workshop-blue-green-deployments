@@ -15,7 +15,7 @@ export class BlueGreenPipelineStack extends Stack {
 
         const deploymentConfigName = new CfnParameter(this, 'deploymentConfigName', {
             type: 'String',
-            default: 'CodeDeployDefault.ECSLinear10PercentEvery1Minutes',
+            default: 'CodeDeployDefault.ECSAllAtOnce',
             allowedValues: [
                 'CodeDeployDefault.ECSLinear10PercentEvery1Minutes',
                 'CodeDeployDefault.ECSLinear10PercentEvery3Minutes',
