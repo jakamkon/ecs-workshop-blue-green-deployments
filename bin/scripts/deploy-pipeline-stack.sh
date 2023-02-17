@@ -54,4 +54,4 @@ echo "http://$ALB_DNS"
 curl http://$ALB_DNS
 
 echo -e "${GREEN}Setting up Blue/Green deployments for the future..."
-cdk --app "npx ts-node bin/pipeline-stack.ts" deploy --parameters deploymentConfigName=CodeDeployDefault.ECSLinear10PercentEvery1Minutes --parameters taskSetTerminationTimeInMinutes=2 --require-approval never
+cdk --app "npx ts-node bin/pipeline-stack.ts" deploy --parameters deploymentConfigName=CodeDeployDefault.ECSLinear10PercentEvery1Minutes --parameters taskSetTerminationTimeInMinutes=10 --require-approval never
